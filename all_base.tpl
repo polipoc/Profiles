@@ -49,7 +49,7 @@ dns:
      - '[2a10:50c0::bad1:ff]:53'
      - '[2a10:50c0::bad2:ff]:53'
   nameserver:
-#     - https://dns.alidns.com/dns-query
+     - https://dns.alidns.com/dns-query
 #     - tls://dns.alidns.com:853
      - https://dns.adguard.com/dns-query
      - tls://dns.adguard.com:853
