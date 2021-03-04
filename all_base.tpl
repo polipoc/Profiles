@@ -16,7 +16,7 @@ dns:
      - 223.5.5.5
      - 119.29.29.29
      - 94.140.14.15
-     - 94.140.15.16
+     - 1.1.1.1
      - '[2400:3200::1]:53'
      - '[2a10:50c0::bad1:ff]:53'
      - '[2a10:50c0::bad2:ff]:53'
@@ -41,8 +41,7 @@ dns:
   ipv6: true
   enhanced-mode: redir-host
   default-nameserver:
-#     - 223.5.5.5
-#     - 119.29.29.29
+     - 223.5.5.5
      - 94.140.14.15
      - 1.1.1.1
      - '[2400:3200::1]:53'
@@ -50,7 +49,7 @@ dns:
      - '[2a10:50c0::bad2:ff]:53'
   nameserver:
      - https://dns.alidns.com/dns-query
-#     - tls://dns.alidns.com:853
+     - tls://dns.alidns.com:853
      - https://dns.adguard.com/dns-query
      - tls://dns.adguard.com:853
      - https://cloudflare-dns.com/dns-query
