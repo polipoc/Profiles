@@ -42,6 +42,7 @@ dns:
   enhanced-mode: redir-host
   default-nameserver:
      - 223.5.5.5
+     - 119.29.29.29
      - 94.140.14.15
      - 1.1.1.1
      - '[2400:3200::1]:53'
