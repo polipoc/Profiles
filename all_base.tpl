@@ -25,6 +25,14 @@ dns:
      - https://dns.adguard.com/dns-query
      - tls://dns.adguard.com:853
      - https://cloudflare-dns.com/dns-query
+  fallback:
+     - https://dns.adguard.com/dns-query
+     - tls://dns.adguard.com:853
+     - https://cloudflare-dns.com/dns-query
+  fallback-filter:
+     geoip: true
+     ipcidr:
+#       - 240.0.0.0/4
 {% else %}
 dns:
   enable: true
