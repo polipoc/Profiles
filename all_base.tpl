@@ -30,9 +30,9 @@ dns:
      - tls://dns.adguard.com:853
      - https://cloudflare-dns.com/dns-query
   fallback-filter:
-     geoip: true
-     ipcidr:
-#       - 240.0.0.0/4
+    geoip: true
+    ipcidr:
+      # - 240.0.0.0/4
 {% else %}
 dns:
   enable: true
@@ -50,14 +50,14 @@ dns:
      - tls://dns.adguard.com:853
      - https://cloudflare-dns.com/dns-query
      - https://dns.alidns.com/dns-query
-   fallback:
+  fallback:
      - https://dns.adguard.com/dns-query
      - tls://dns.adguard.com:853
      - https://cloudflare-dns.com/dns-query
   fallback-filter:
-     geoip: true
-     ipcidr:
-#       - 240.0.0.0/4
+    geoip: true
+    ipcidr:
+      # - 240.0.0.0/4
 {% if default(request.clash.tun, "") == "1" %}
 tun:
   enable: true
