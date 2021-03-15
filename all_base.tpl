@@ -50,7 +50,7 @@ dns:
      - '[2a10:50c0::ad1:ff]:53'
      - '[2a10:50c0::ad2:ff]:53'
   nameserver:
-     - https://dns.alidns.com/dns-query
+#     - https://dns.alidns.com/dns-query
      - https://cloudflare-dns.com/dns-query
      - https://dns.adguard.com/dns-query
      - tls://dns.adguard.com:853
