@@ -43,21 +43,21 @@ dns:
   enhanced-mode: redir-host
   default-nameserver:
 #     - 223.5.5.5
-     - 1.1.1.1
+#     - 1.1.1.1
      - 94.140.14.14
      - 94.140.15.15
-     - '[2400:3200::1]:53'
+#     - '[2400:3200::1]:53'
      - '[2a10:50c0::ad1:ff]:53'
      - '[2a10:50c0::ad2:ff]:53'
   nameserver:
 #     - https://dns.alidns.com/dns-query
-     - https://cloudflare-dns.com/dns-query
      - https://dns.adguard.com/dns-query
-     - tls://dns.adguard.com:853
+     - https://cloudflare-dns.com/dns-query
+#     - tls://dns.adguard.com:853
   fallback:
-     - https://cloudflare-dns.com/dns-query
      - https://dns.adguard.com/dns-query
-     - tls://dns.adguard.com:853
+     - https://cloudflare-dns.com/dns-query
+#     - tls://dns.adguard.com:853
   fallback-filter:
     geoip: true
     ipcidr:
