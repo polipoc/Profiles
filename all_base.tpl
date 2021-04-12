@@ -18,12 +18,13 @@ dns:
      - "[2a10:50c0::bad1:ff]:53"
      - "[2a10:50c0::bad2:ff]:53"
   nameserver:
+     - https://1.1.1.1/dns-query
+     - https://1.0.0.1/dns-query
      - https://dns.adguard.com/dns-query
-     - https://cloudflare-dns.com/dns-query
-     - https://dns.alidns.com/dns-query
   fallback:
+     - https://1.1.1.1/dns-query
+     - https://1.0.0.1/dns-query
      - https://dns.adguard.com/dns-query
-     - https://cloudflare-dns.com/dns-query
   fallback-filter:
     geoip: true
     ipcidr:
@@ -41,12 +42,13 @@ dns:
      - "[2a10:50c0::bad1:ff]:53"
      - "[2a10:50c0::bad2:ff]:53"
   nameserver:
+     - https://1.1.1.1/dns-query
+     - https://1.0.0.1/dns-query
      - https://dns.adguard.com/dns-query
-     - https://cloudflare-dns.com/dns-query
-     - https://dns.alidns.com/dns-query
   fallback:
+     - https://1.1.1.1/dns-query
+     - https://1.0.0.1/dns-query
      - https://dns.adguard.com/dns-query
-     - https://cloudflare-dns.com/dns-query
   fallback-filter:
     geoip: true
     ipcidr:
