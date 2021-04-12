@@ -13,28 +13,21 @@ dns:
   ipv6: true
   enhanced-mode: redir-host
   default-nameserver:
-     - 223.5.5.5
-     - 119.29.29.29
      - 94.140.14.14
-     - 1.1.1.1
-     - '[2400:3200::1]:53'
-     - '[2a10:50c0::bad1:ff]:53'
-     - '[2a10:50c0::bad2:ff]:53'
+     - 94.140.15.15
+     - "[2a10:50c0::bad1:ff]:53"
+     - "[2a10:50c0::bad2:ff]:53"
   nameserver:
-     - https://dns.alidns.com/dns-query
-     - tls://dns.alidns.com:853
      - https://dns.adguard.com/dns-query
-     - tls://dns.adguard.com:853
      - https://cloudflare-dns.com/dns-query
+     - https://dns.alidns.com/dns-query
   fallback:
-     - https://cloudflare-dns.com/dns-query
-     - https://dns.alidns.com/dns-query
      - https://dns.adguard.com/dns-query
-     - tls://dns.adguard.com:853
+     - https://cloudflare-dns.com/dns-query
   fallback-filter:
     geoip: true
     ipcidr:
-      # - 240.0.0.0/4
+      - 240.0.0.0/4
 {% endif %}
 {% if default(request.clash.dns, "") == "1" %}
 dns:
@@ -43,26 +36,21 @@ dns:
   ipv6: true
   enhanced-mode: redir-host
   default-nameserver:
-#     - 223.5.5.5
-#     - 1.1.1.1
      - 94.140.14.14
      - 94.140.15.15
-#     - '[2400:3200::1]:53'
-     - '[2a10:50c0::ad1:ff]:53'
-     - '[2a10:50c0::ad2:ff]:53'
+     - "[2a10:50c0::bad1:ff]:53"
+     - "[2a10:50c0::bad2:ff]:53"
   nameserver:
-#     - https://dns.alidns.com/dns-query
      - https://dns.adguard.com/dns-query
      - https://cloudflare-dns.com/dns-query
-#     - tls://dns.adguard.com:853
+     - https://dns.alidns.com/dns-query
   fallback:
      - https://dns.adguard.com/dns-query
      - https://cloudflare-dns.com/dns-query
-#     - tls://dns.adguard.com:853
   fallback-filter:
     geoip: true
     ipcidr:
-      # - 240.0.0.0/4
+      - 240.0.0.0/4
 {% endif %}
 {% if default(request.clash.tun, "") == "1" %}
 tun:
