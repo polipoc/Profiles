@@ -35,7 +35,8 @@ dns:
     geoip: true
     ipcidr:
       # - 240.0.0.0/4
-{% else %}
+{% endif %}
+{% if default(request.clash.dns, "") == "1" %}
 dns:
   enable: true
   listen: 0.0.0.0:53
@@ -62,6 +63,7 @@ dns:
     geoip: true
     ipcidr:
       # - 240.0.0.0/4
+{% endif %}
 {% if default(request.clash.tun, "") == "1" %}
 tun:
   enable: true
@@ -70,7 +72,6 @@ tun:
     - 198.18.0.2:53
   macOS-auto-route: true
   macOS-auto-detect-interface: true
-{% endif %}
 {% endif %}
 {% if local.clash.new_field_name == "true" %}
 proxies: ~
